@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif, "Helvetica Neue", Helvetica, Arial;
+}
+
+
+:root {
+    --background-disfoque: #303134;
+    --background-light: #e5e5e5;
+    --background-foque: #f3f5f6;
+    --primary: #5929cc;
+    --primary-deep: #1b0c3d;
+    --black: #000000;
+    --black-cyan: #121212;
+    --secondary: #121212;
+    --header-background: #d3d3d3;
+    --white: #fff;
+    --background: #f2f3f5;
+    --gray-line: #dcdde0;
+    --text: #666666;
+    --text-highlight: #b3b9ff;
+    --title: #2e384d;
+     --green: #4cd62b;
+    --green-light: #32861d;
+    --blue: #5965e0;
+    --blue-dark: #4953b8;
+    --blue-twitter: #2aa9e0;
+  
+    --panel-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+
+  
+  
+body,
+html,
+.container {
+  height: 100%;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
