@@ -89,3 +89,62 @@ div.agency-header {
 div.agency-header h4 {
   font-weight: 500;
 }
+
+div.main {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-around;
+
+  margin-top: 3rem;
+}
+
+div.plans-group {
+  display: flex;
+  flex-direction: column;
+}
+
+div.plans-group > div {
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  margin: 0.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+}
+
+div.main div.athentication {
+  max-width: 400px;
+}
+
+/* FORM */
+form#athentication-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+
+  background: var(--white);
+}
+
+form#athentication-form div.data-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+}
+
+form#athentication-form div.data-group label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+form#athentication-form div.data-group input {
+  height: 30px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: var(--title);
+}
