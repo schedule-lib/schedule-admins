@@ -22,6 +22,8 @@
   --text: #666666;
   --text-highlight: #b3b9ff;
   --title: #2e384d;
+  --red-light: #f58;
+  --red: #e83f5b;
   --green: #4cd62b;
   --green-light: #32861d;
   --blue: #5965e0;
@@ -47,4 +49,83 @@ html,
   html {
     font-size: 87.5%;
   }
+}
+
+button,
+input {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button.default {
+  height: 4.4rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.1rem;
+  color: var(--background);
+  background: var(--primary);
+
+  margin: 0 auto;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: background-color 1s ease-in;
+}
+button.default:hover,
+button.default:active,
+button.default:focus {
+  background: var(--blue);
+}
+
+button.new {
+  width: fit-content;
+  border: 0;
+  border-radius: 0.2rem;
+  color: var(--background);
+  background: var(--green);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  padding: 0.1rem 0.2rem;
+}
+button.new:hover,
+button.new:active,
+button.new:focus {
+  background: var(--green-light);
+}
+
+.panel-shadow:hover {
+  box-shadow: var(--panel-shadow);
+}
+
+strong,
+input {
+  font: 400 16px "Inter", sans-serif, "Helvetica Neue", Helvetica, Arial, sans;
 }

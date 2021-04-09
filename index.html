@@ -1,72 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <title>Agendamento</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;1,100&family=Inter:wght@100;200;300;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <title>Schedule | Dashboard</title>
+  </head>
+  <body>
     <div class="container">
-        <aside>
-            <h1>Serviço de Agendamento</h1>
-            <div class="group-one">
-                <div class="group-two">
-                    <h5>Agencias:</h5>
-                    </div>
-                    <ul>
-                        <li><a href="#">Nubank</a></li>
-                        <li><a href="#">Banco do brasil</a></li>
-                        <li><a href="#">policia federal</a></li>
-                    </ul>
-            </div>
-            <button class="deafult">adicionar empresa</button>
+      <aside>
+        <h1>Serviço de agendamento</h1>
 
-        </aside>
-        <article class="direito-container">
-            <div class="Cabeçalho">
-            <h4>Agencia</h4>
-            <div>+</div>
+        <div class="already-group">
+          <div class="server-done">
+            <h5>Agências:</h5>
+          </div>
+          <ul>
+            <li><a href="#">Nubank</a></li>
+            <li><a href="#">Banco do brasil</a></li>
+            <li><a href="#">Polícia federal</a></li>
+            <li><a href="#">Centro médico</a></li>
+          </ul>
+        </div>
 
-            </div>
-            <div class="services">
-                <div class="services-below">
-                    <strong>Plano da agencia:</strong>
-
-                </div>
-                <div class="services-below">
-
-                    <strong>Essencial</strong>
-                </div>
-                <div class="services-below">
-
-                    <strong>Professional</strong>
-                </div>
-
-                <div class="autentication">
-                    <h4>Autenticação</h4>
-                <div class="crew">
-                    <strong>identificador</strong>
-                    <input type="text" name="tipo" placeholder="ex:nubank@" />
-                </div>
-                <div class="crew">
-                    <label>Senha secreta:</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="password"
-            required
-            name="password"
-          />
-
-                </div>
-
-
-                </div>
-            </div>
-
+        <button class="default">novo serviço</button>
+      </aside>
     </div>
-</body>
+  </body>
 </html>
