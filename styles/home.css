@@ -71,6 +71,7 @@ article.main-content {
   padding: 2rem;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 div.agency-header {
@@ -104,7 +105,7 @@ div.plans-group {
   flex-direction: column;
 }
 
-div.plans-group > div {
+div.plans-group > div.plan-block {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   margin: 0.2rem;
   padding: 0.6rem 1rem;
@@ -147,4 +148,53 @@ form#athentication-form div.data-group input {
   border-radius: 0.2rem;
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: var(--title);
+}
+
+button.default-form {
+  height: 2.5rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.1rem;
+  color: var(--background);
+  background: var(--primary);
+
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: background-color 1s ease-in;
+}
+
+div.bottom {
+  position: absolute;
+  bottom: 2.5rem;
+  width: 100%;
+}
+
+button.final {
+  width: 600px;
+  border: 0;
+  border-radius: 0.2rem;
+  color: var(--background);
+  background: var(--green);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  font-weight: bold;
+  padding: 0.1rem 0.2rem;
+  height: 3.5rem;
+}
+button.final:hover,
+button.final:active,
+button.final:focus {
+  background: var(--green-light);
 }
